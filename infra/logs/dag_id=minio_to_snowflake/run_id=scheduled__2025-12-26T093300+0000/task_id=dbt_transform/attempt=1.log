@@ -1,0 +1,37 @@
+[2025-12-26T10:00:30.699+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-12-26T10:00:30.772+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: minio_to_snowflake.dbt_transform scheduled__2025-12-26T09:33:00+00:00 [queued]>
+[2025-12-26T10:00:30.790+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: minio_to_snowflake.dbt_transform scheduled__2025-12-26T09:33:00+00:00 [queued]>
+[2025-12-26T10:00:30.792+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2025-12-26T10:00:30.820+0000] {taskinstance.py:2330} INFO - Executing <Task(BashOperator): dbt_transform> on 2025-12-26 09:33:00+00:00
+[2025-12-26T10:00:30.847+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'minio_to_snowflake', 'dbt_transform', 'scheduled__2025-12-26T09:33:00+00:00', '--job-id', '121', '--raw', '--subdir', 'DAGS_FOLDER/minio_to_snowflake.py', '--cfg-path', '/tmp/tmpco5j1tzi']
+[2025-12-26T10:00:30.855+0000] {standard_task_runner.py:91} INFO - Job 121: Subtask dbt_transform
+[2025-12-26T10:00:30.859+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62 DeprecationWarning: This process (pid=12352) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2025-12-26T10:00:30.861+0000] {standard_task_runner.py:64} INFO - Started process 12369 to run task
+[2025-12-26T10:00:30.984+0000] {task_command.py:426} INFO - Running <TaskInstance: minio_to_snowflake.dbt_transform scheduled__2025-12-26T09:33:00+00:00 [running]> on host a29b2270dc41
+[2025-12-26T10:00:31.195+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='minio_to_snowflake' AIRFLOW_CTX_TASK_ID='dbt_transform' AIRFLOW_CTX_EXECUTION_DATE='2025-12-26T09:33:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-12-26T09:33:00+00:00'
+[2025-12-26T10:00:31.198+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-12-26T10:00:31.223+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2025-12-26T10:00:31.226+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', '\n            cd /opt/***/dbt_stocks &&             if [ -f "dbt_project.yml" ]; then                 dbt run --profiles-dir .;             else                 cd dbt_stocks && dbt run --profiles-dir .;             fi\n            ']
+[2025-12-26T10:00:31.260+0000] {subprocess.py:86} INFO - Output:
+[2025-12-26T10:00:31.270+0000] {subprocess.py:93} INFO - /usr/bin/bash: line 2: cd: dbt_stocks: No such file or directory
+[2025-12-26T10:00:31.271+0000] {subprocess.py:97} INFO - Command exited with return code 1
+[2025-12-26T10:00:31.273+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-12-26T10:00:31.304+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/bash.py", line 243, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2025-12-26T10:00:31.313+0000] {taskinstance.py:1206} INFO - Marking task as UP_FOR_RETRY. dag_id=minio_to_snowflake, task_id=dbt_transform, run_id=scheduled__2025-12-26T09:33:00+00:00, execution_date=20251226T093300, start_date=20251226T100030, end_date=20251226T100031
+[2025-12-26T10:00:31.339+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 121 for task dbt_transform (Bash command failed. The command returned a non-zero exit code 1.; 12369)
+[2025-12-26T10:00:31.400+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 1
+[2025-12-26T10:00:31.442+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-12-26T10:00:31.448+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

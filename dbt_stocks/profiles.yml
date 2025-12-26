@@ -1,0 +1,13 @@
+dbt_stocks:
+  outputs:
+    dev:
+      account: kp07060.ap-southeast-3.aws
+      database: STOCKS_MDS
+      password: Blackrock2025@
+      role: ACCOUNTADMIN
+      schema: COMMON
+      threads: 4
+      type: snowflake
+      user: rajat18996
+      warehouse: COMPUTE_WH
+  target: dev

@@ -1,0 +1,148 @@
+[2025-12-24T13:39:59.309+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-12-24T13:39:59.369+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: minio_to_snowflake.download_minio scheduled__2025-12-24T13:36:00+00:00 [queued]>
+[2025-12-24T13:39:59.383+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: minio_to_snowflake.download_minio scheduled__2025-12-24T13:36:00+00:00 [queued]>
+[2025-12-24T13:39:59.385+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2025-12-24T13:39:59.412+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): download_minio> on 2025-12-24 13:36:00+00:00
+[2025-12-24T13:39:59.439+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'minio_to_snowflake', 'download_minio', 'scheduled__2025-12-24T13:36:00+00:00', '--job-id', '140', '--raw', '--subdir', 'DAGS_FOLDER/minio_to_snowflake.py', '--cfg-path', '/tmp/tmpt9kwien8']
+[2025-12-24T13:39:59.448+0000] {standard_task_runner.py:91} INFO - Job 140: Subtask download_minio
+[2025-12-24T13:39:59.451+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62 DeprecationWarning: This process (pid=1189) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2025-12-24T13:39:59.453+0000] {standard_task_runner.py:64} INFO - Started process 1203 to run task
+[2025-12-24T13:39:59.572+0000] {task_command.py:426} INFO - Running <TaskInstance: minio_to_snowflake.download_minio scheduled__2025-12-24T13:36:00+00:00 [running]> on host 31fa77be4c89
+[2025-12-24T13:39:59.785+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='minio_to_snowflake' AIRFLOW_CTX_TASK_ID='download_minio' AIRFLOW_CTX_EXECUTION_DATE='2025-12-24T13:36:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-12-24T13:36:00+00:00'
+[2025-12-24T13:39:59.787+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-12-24T13:40:00.752+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1766583258.json -> /tmp/minio_downloads/1766583258.json
+[2025-12-24T13:40:00.771+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1766583273.json -> /tmp/minio_downloads/1766583273.json
+[2025-12-24T13:40:00.790+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1766583286.json -> /tmp/minio_downloads/1766583286.json
+[2025-12-24T13:40:00.807+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1766583299.json -> /tmp/minio_downloads/1766583299.json
+[2025-12-24T13:40:00.826+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1766583313.json -> /tmp/minio_downloads/1766583313.json
+[2025-12-24T13:40:00.848+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1766583326.json -> /tmp/minio_downloads/1766583326.json
+[2025-12-24T13:40:00.864+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1766583339.json -> /tmp/minio_downloads/1766583339.json
+[2025-12-24T13:40:00.881+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1766583352.json -> /tmp/minio_downloads/1766583352.json
+[2025-12-24T13:40:00.899+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1766583365.json -> /tmp/minio_downloads/1766583365.json
+[2025-12-24T13:40:00.917+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1766583378.json -> /tmp/minio_downloads/1766583378.json
+[2025-12-24T13:40:00.934+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1766583391.json -> /tmp/minio_downloads/1766583391.json
+[2025-12-24T13:40:00.954+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1766583405.json -> /tmp/minio_downloads/1766583405.json
+[2025-12-24T13:40:00.972+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1766583419.json -> /tmp/minio_downloads/1766583419.json
+[2025-12-24T13:40:00.991+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1766583434.json -> /tmp/minio_downloads/1766583434.json
+[2025-12-24T13:40:01.009+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1766583447.json -> /tmp/minio_downloads/1766583447.json
+[2025-12-24T13:40:01.026+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1766583459.json -> /tmp/minio_downloads/1766583459.json
+[2025-12-24T13:40:01.042+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1766583472.json -> /tmp/minio_downloads/1766583472.json
+[2025-12-24T13:40:01.058+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1766583485.json -> /tmp/minio_downloads/1766583485.json
+[2025-12-24T13:40:01.077+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1766583498.json -> /tmp/minio_downloads/1766583498.json
+[2025-12-24T13:40:01.094+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1766583511.json -> /tmp/minio_downloads/1766583511.json
+[2025-12-24T13:40:01.112+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1766583524.json -> /tmp/minio_downloads/1766583524.json
+[2025-12-24T13:40:01.127+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1766583538.json -> /tmp/minio_downloads/1766583538.json
+[2025-12-24T13:40:01.145+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1766583551.json -> /tmp/minio_downloads/1766583551.json
+[2025-12-24T13:40:01.163+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1766583564.json -> /tmp/minio_downloads/1766583564.json
+[2025-12-24T13:40:01.179+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1766583577.json -> /tmp/minio_downloads/1766583577.json
+[2025-12-24T13:40:01.196+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1766583592.json -> /tmp/minio_downloads/1766583592.json
+[2025-12-24T13:40:01.216+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1766583266.json -> /tmp/minio_downloads/1766583266.json
+[2025-12-24T13:40:01.236+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1766583278.json -> /tmp/minio_downloads/1766583278.json
+[2025-12-24T13:40:01.256+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1766583292.json -> /tmp/minio_downloads/1766583292.json
+[2025-12-24T13:40:01.275+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1766583305.json -> /tmp/minio_downloads/1766583305.json
+[2025-12-24T13:40:01.295+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1766583318.json -> /tmp/minio_downloads/1766583318.json
+[2025-12-24T13:40:01.313+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1766583332.json -> /tmp/minio_downloads/1766583332.json
+[2025-12-24T13:40:01.330+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1766583345.json -> /tmp/minio_downloads/1766583345.json
+[2025-12-24T13:40:01.347+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1766583358.json -> /tmp/minio_downloads/1766583358.json
+[2025-12-24T13:40:01.365+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1766583371.json -> /tmp/minio_downloads/1766583371.json
+[2025-12-24T13:40:01.384+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1766583384.json -> /tmp/minio_downloads/1766583384.json
+[2025-12-24T13:40:01.403+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1766583398.json -> /tmp/minio_downloads/1766583398.json
+[2025-12-24T13:40:01.422+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1766583411.json -> /tmp/minio_downloads/1766583411.json
+[2025-12-24T13:40:01.440+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1766583426.json -> /tmp/minio_downloads/1766583426.json
+[2025-12-24T13:40:01.462+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1766583439.json -> /tmp/minio_downloads/1766583439.json
+[2025-12-24T13:40:01.479+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1766583452.json -> /tmp/minio_downloads/1766583452.json
+[2025-12-24T13:40:01.499+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1766583464.json -> /tmp/minio_downloads/1766583464.json
+[2025-12-24T13:40:01.517+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1766583477.json -> /tmp/minio_downloads/1766583477.json
+[2025-12-24T13:40:01.540+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1766583491.json -> /tmp/minio_downloads/1766583491.json
+[2025-12-24T13:40:01.557+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1766583503.json -> /tmp/minio_downloads/1766583503.json
+[2025-12-24T13:40:01.577+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1766583517.json -> /tmp/minio_downloads/1766583517.json
+[2025-12-24T13:40:01.603+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1766583530.json -> /tmp/minio_downloads/1766583530.json
+[2025-12-24T13:40:01.620+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1766583543.json -> /tmp/minio_downloads/1766583543.json
+[2025-12-24T13:40:01.637+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1766583556.json -> /tmp/minio_downloads/1766583556.json
+[2025-12-24T13:40:01.655+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1766583570.json -> /tmp/minio_downloads/1766583570.json
+[2025-12-24T13:40:01.677+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1766583584.json -> /tmp/minio_downloads/1766583584.json
+[2025-12-24T13:40:01.695+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1766583599.json -> /tmp/minio_downloads/1766583599.json
+[2025-12-24T13:40:01.722+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1766583264.json -> /tmp/minio_downloads/1766583264.json
+[2025-12-24T13:40:01.739+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1766583277.json -> /tmp/minio_downloads/1766583277.json
+[2025-12-24T13:40:01.755+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1766583291.json -> /tmp/minio_downloads/1766583291.json
+[2025-12-24T13:40:01.773+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1766583304.json -> /tmp/minio_downloads/1766583304.json
+[2025-12-24T13:40:01.791+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1766583316.json -> /tmp/minio_downloads/1766583316.json
+[2025-12-24T13:40:01.809+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1766583330.json -> /tmp/minio_downloads/1766583330.json
+[2025-12-24T13:40:01.824+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1766583343.json -> /tmp/minio_downloads/1766583343.json
+[2025-12-24T13:40:01.838+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1766583356.json -> /tmp/minio_downloads/1766583356.json
+[2025-12-24T13:40:01.856+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1766583370.json -> /tmp/minio_downloads/1766583370.json
+[2025-12-24T13:40:01.870+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1766583383.json -> /tmp/minio_downloads/1766583383.json
+[2025-12-24T13:40:01.886+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1766583396.json -> /tmp/minio_downloads/1766583396.json
+[2025-12-24T13:40:01.901+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1766583410.json -> /tmp/minio_downloads/1766583410.json
+[2025-12-24T13:40:01.918+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1766583425.json -> /tmp/minio_downloads/1766583425.json
+[2025-12-24T13:40:01.934+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1766583438.json -> /tmp/minio_downloads/1766583438.json
+[2025-12-24T13:40:01.952+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1766583451.json -> /tmp/minio_downloads/1766583451.json
+[2025-12-24T13:40:01.968+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1766583463.json -> /tmp/minio_downloads/1766583463.json
+[2025-12-24T13:40:01.984+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1766583476.json -> /tmp/minio_downloads/1766583476.json
+[2025-12-24T13:40:02.002+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1766583489.json -> /tmp/minio_downloads/1766583489.json
+[2025-12-24T13:40:02.017+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1766583502.json -> /tmp/minio_downloads/1766583502.json
+[2025-12-24T13:40:02.031+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1766583515.json -> /tmp/minio_downloads/1766583515.json
+[2025-12-24T13:40:02.047+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1766583528.json -> /tmp/minio_downloads/1766583528.json
+[2025-12-24T13:40:02.063+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1766583542.json -> /tmp/minio_downloads/1766583542.json
+[2025-12-24T13:40:02.081+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1766583555.json -> /tmp/minio_downloads/1766583555.json
+[2025-12-24T13:40:02.096+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1766583568.json -> /tmp/minio_downloads/1766583568.json
+[2025-12-24T13:40:02.112+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1766583583.json -> /tmp/minio_downloads/1766583583.json
+[2025-12-24T13:40:02.130+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1766583597.json -> /tmp/minio_downloads/1766583597.json
+[2025-12-24T13:40:02.151+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1766583260.json -> /tmp/minio_downloads/1766583260.json
+[2025-12-24T13:40:02.170+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1766583275.json -> /tmp/minio_downloads/1766583275.json
+[2025-12-24T13:40:02.190+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1766583288.json -> /tmp/minio_downloads/1766583288.json
+[2025-12-24T13:40:02.216+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1766583301.json -> /tmp/minio_downloads/1766583301.json
+[2025-12-24T13:40:02.235+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1766583314.json -> /tmp/minio_downloads/1766583314.json
+[2025-12-24T13:40:02.257+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1766583327.json -> /tmp/minio_downloads/1766583327.json
+[2025-12-24T13:40:02.274+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1766583341.json -> /tmp/minio_downloads/1766583341.json
+[2025-12-24T13:40:02.291+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1766583354.json -> /tmp/minio_downloads/1766583354.json
+[2025-12-24T13:40:02.309+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1766583366.json -> /tmp/minio_downloads/1766583366.json
+[2025-12-24T13:40:02.327+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1766583380.json -> /tmp/minio_downloads/1766583380.json
+[2025-12-24T13:40:02.347+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1766583393.json -> /tmp/minio_downloads/1766583393.json
+[2025-12-24T13:40:02.366+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1766583407.json -> /tmp/minio_downloads/1766583407.json
+[2025-12-24T13:40:02.386+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1766583420.json -> /tmp/minio_downloads/1766583420.json
+[2025-12-24T13:40:02.404+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1766583436.json -> /tmp/minio_downloads/1766583436.json
+[2025-12-24T13:40:02.421+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1766583448.json -> /tmp/minio_downloads/1766583448.json
+[2025-12-24T13:40:02.439+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1766583461.json -> /tmp/minio_downloads/1766583461.json
+[2025-12-24T13:40:02.456+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1766583473.json -> /tmp/minio_downloads/1766583473.json
+[2025-12-24T13:40:02.472+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1766583487.json -> /tmp/minio_downloads/1766583487.json
+[2025-12-24T13:40:02.487+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1766583499.json -> /tmp/minio_downloads/1766583499.json
+[2025-12-24T13:40:02.504+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1766583513.json -> /tmp/minio_downloads/1766583513.json
+[2025-12-24T13:40:02.521+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1766583525.json -> /tmp/minio_downloads/1766583525.json
+[2025-12-24T13:40:02.539+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1766583539.json -> /tmp/minio_downloads/1766583539.json
+[2025-12-24T13:40:02.555+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1766583552.json -> /tmp/minio_downloads/1766583552.json
+[2025-12-24T13:40:02.571+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1766583565.json -> /tmp/minio_downloads/1766583565.json
+[2025-12-24T13:40:02.588+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1766583579.json -> /tmp/minio_downloads/1766583579.json
+[2025-12-24T13:40:02.606+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1766583593.json -> /tmp/minio_downloads/1766583593.json
+[2025-12-24T13:40:02.624+0000] {logging_mixin.py:188} INFO - Downloaded TSLA/1766583262.json -> /tmp/minio_downloads/1766583262.json
+[2025-12-24T13:40:02.645+0000] {logging_mixin.py:188} INFO - Downloaded TSLA/1766583276.json -> /tmp/minio_downloads/1766583276.json
+[2025-12-24T13:40:02.665+0000] {logging_mixin.py:188} INFO - Downloaded TSLA/1766583289.json -> /tmp/minio_downloads/1766583289.json
+[2025-12-24T13:40:02.684+0000] {logging_mixin.py:188} INFO - Downloaded TSLA/1766583302.json -> /tmp/minio_downloads/1766583302.json
+[2025-12-24T13:40:02.702+0000] {logging_mixin.py:188} INFO - Downloaded TSLA/1766583315.json -> /tmp/minio_downloads/1766583315.json
+[2025-12-24T13:40:02.719+0000] {logging_mixin.py:188} INFO - Downloaded TSLA/1766583329.json -> /tmp/minio_downloads/1766583329.json
+[2025-12-24T13:40:02.736+0000] {logging_mixin.py:188} INFO - Downloaded TSLA/1766583342.json -> /tmp/minio_downloads/1766583342.json
+[2025-12-24T13:40:02.754+0000] {logging_mixin.py:188} INFO - Downloaded TSLA/1766583355.json -> /tmp/minio_downloads/1766583355.json
+[2025-12-24T13:40:02.769+0000] {logging_mixin.py:188} INFO - Downloaded TSLA/1766583368.json -> /tmp/minio_downloads/1766583368.json
+[2025-12-24T13:40:02.788+0000] {logging_mixin.py:188} INFO - Downloaded TSLA/1766583381.json -> /tmp/minio_downloads/1766583381.json
+[2025-12-24T13:40:02.804+0000] {logging_mixin.py:188} INFO - Downloaded TSLA/1766583394.json -> /tmp/minio_downloads/1766583394.json
+[2025-12-24T13:40:02.822+0000] {logging_mixin.py:188} INFO - Downloaded TSLA/1766583408.json -> /tmp/minio_downloads/1766583408.json
+[2025-12-24T13:40:02.839+0000] {logging_mixin.py:188} INFO - Downloaded TSLA/1766583422.json -> /tmp/minio_downloads/1766583422.json
+[2025-12-24T13:40:02.867+0000] {logging_mixin.py:188} INFO - Downloaded TSLA/1766583437.json -> /tmp/minio_downloads/1766583437.json
+[2025-12-24T13:40:02.886+0000] {logging_mixin.py:188} INFO - Downloaded TSLA/1766583449.json -> /tmp/minio_downloads/1766583449.json
+[2025-12-24T13:40:02.901+0000] {logging_mixin.py:188} INFO - Downloaded TSLA/1766583462.json -> /tmp/minio_downloads/1766583462.json
+[2025-12-24T13:40:02.920+0000] {logging_mixin.py:188} INFO - Downloaded TSLA/1766583474.json -> /tmp/minio_downloads/1766583474.json
+[2025-12-24T13:40:02.938+0000] {logging_mixin.py:188} INFO - Downloaded TSLA/1766583488.json -> /tmp/minio_downloads/1766583488.json
+[2025-12-24T13:40:02.963+0000] {logging_mixin.py:188} INFO - Downloaded TSLA/1766583501.json -> /tmp/minio_downloads/1766583501.json
+[2025-12-24T13:40:02.982+0000] {logging_mixin.py:188} INFO - Downloaded TSLA/1766583514.json -> /tmp/minio_downloads/1766583514.json
+[2025-12-24T13:40:03.000+0000] {logging_mixin.py:188} INFO - Downloaded TSLA/1766583527.json -> /tmp/minio_downloads/1766583527.json
+[2025-12-24T13:40:03.024+0000] {logging_mixin.py:188} INFO - Downloaded TSLA/1766583541.json -> /tmp/minio_downloads/1766583541.json
+[2025-12-24T13:40:03.043+0000] {logging_mixin.py:188} INFO - Downloaded TSLA/1766583553.json -> /tmp/minio_downloads/1766583553.json
+[2025-12-24T13:40:03.068+0000] {logging_mixin.py:188} INFO - Downloaded TSLA/1766583567.json -> /tmp/minio_downloads/1766583567.json
+[2025-12-24T13:40:03.085+0000] {logging_mixin.py:188} INFO - Downloaded TSLA/1766583582.json -> /tmp/minio_downloads/1766583582.json
+[2025-12-24T13:40:03.104+0000] {logging_mixin.py:188} INFO - Downloaded TSLA/1766583595.json -> /tmp/minio_downloads/1766583595.json
+[2025-12-24T13:40:03.107+0000] {python.py:237} INFO - Done. Returned value was: ['/tmp/minio_downloads/1766583258.json', '/tmp/minio_downloads/1766583273.json', '/tmp/minio_downloads/1766583286.json', '/tmp/minio_downloads/1766583299.json', '/tmp/minio_downloads/1766583313.json', '/tmp/minio_downloads/1766583326.json', '/tmp/minio_downloads/1766583339.json', '/tmp/minio_downloads/1766583352.json', '/tmp/minio_downloads/1766583365.json', '/tmp/minio_downloads/1766583378.json', '/tmp/minio_downloads/1766583391.json', '/tmp/minio_downloads/1766583405.json', '/tmp/minio_downloads/1766583419.json', '/tmp/minio_downloads/1766583434.json', '/tmp/minio_downloads/1766583447.json', '/tmp/minio_downloads/1766583459.json', '/tmp/minio_downloads/1766583472.json', '/tmp/minio_downloads/1766583485.json', '/tmp/minio_downloads/1766583498.json', '/tmp/minio_downloads/1766583511.json', '/tmp/minio_downloads/1766583524.json', '/tmp/minio_downloads/1766583538.json', '/tmp/minio_downloads/1766583551.json', '/tmp/minio_downloads/1766583564.json', '/tmp/minio_downloads/1766583577.json', '/tmp/minio_downloads/1766583592.json', '/tmp/minio_downloads/1766583266.json', '/tmp/minio_downloads/1766583278.json', '/tmp/minio_downloads/1766583292.json', '/tmp/minio_downloads/1766583305.json', '/tmp/minio_downloads/1766583318.json', '/tmp/minio_downloads/1766583332.json', '/tmp/minio_downloads/1766583345.json', '/tmp/minio_downloads/1766583358.json', '/tmp/minio_downloads/1766583371.json', '/tmp/minio_downloads/1766583384.json', '/tmp/minio_downloads/1766583398.json', '/tmp/minio_downloads/1766583411.json', '/tmp/minio_downloads/1766583426.json', '/tmp/minio_downloads/1766583439.json', '/tmp/minio_downloads/1766583452.json', '/tmp/minio_downloads/1766583464.json', '/tmp/minio_downloads/1766583477.json', '/tmp/minio_downloads/1766583491.json', '/tmp/minio_downloads/1766583503.json', '/tmp/minio_downloads/1766583517.json', '/tmp/minio_downloads/1766583530.json', '/tmp/minio_downloads/1766583543.json', '/tmp/minio_downloads/1766583556.json', '/tmp/minio_downloads/1766583570.json', '/tmp/minio_downloads/1766583584.json', '/tmp/minio_downloads/1766583599.json', '/tmp/minio_downloads/1766583264.json', '/tmp/minio_downloads/1766583277.json', '/tmp/minio_downloads/1766583291.json', '/tmp/minio_downloads/1766583304.json', '/tmp/minio_downloads/1766583316.json', '/tmp/minio_downloads/1766583330.json', '/tmp/minio_downloads/1766583343.json', '/tmp/minio_downloads/1766583356.json', '/tmp/minio_downloads/1766583370.json', '/tmp/minio_downloads/1766583383.json', '/tmp/minio_downloads/1766583396.json', '/tmp/minio_downloads/1766583410.json', '/tmp/minio_downloads/1766583425.json', '/tmp/minio_downloads/1766583438.json', '/tmp/minio_downloads/1766583451.json', '/tmp/minio_downloads/1766583463.json', '/tmp/minio_downloads/1766583476.json', '/tmp/minio_downloads/1766583489.json', '/tmp/minio_downloads/1766583502.json', '/tmp/minio_downloads/1766583515.json', '/tmp/minio_downloads/1766583528.json', '/tmp/minio_downloads/1766583542.json', '/tmp/minio_downloads/1766583555.json', '/tmp/minio_downloads/1766583568.json', '/tmp/minio_downloads/1766583583.json', '/tmp/minio_downloads/1766583597.json', '/tmp/minio_downloads/1766583260.json', '/tmp/minio_downloads/1766583275.json', '/tmp/minio_downloads/1766583288.json', '/tmp/minio_downloads/1766583301.json', '/tmp/minio_downloads/1766583314.json', '/tmp/minio_downloads/1766583327.json', '/tmp/minio_downloads/1766583341.json', '/tmp/minio_downloads/1766583354.json', '/tmp/minio_downloads/1766583366.json', '/tmp/minio_downloads/1766583380.json', '/tmp/minio_downloads/1766583393.json', '/tmp/minio_downloads/1766583407.json', '/tmp/minio_downloads/1766583420.json', '/tmp/minio_downloads/1766583436.json', '/tmp/minio_downloads/1766583448.json', '/tmp/minio_downloads/1766583461.json', '/tmp/minio_downloads/1766583473.json', '/tmp/minio_downloads/1766583487.json', '/tmp/minio_downloads/1766583499.json', '/tmp/minio_downloads/1766583513.json', '/tmp/minio_downloads/1766583525.json', '/tmp/minio_downloads/1766583539.json', '/tmp/minio_downloads/1766583552.json', '/tmp/minio_downloads/1766583565.json', '/tmp/minio_downloads/1766583579.json', '/tmp/minio_downloads/1766583593.json', '/tmp/minio_downloads/1766583262.json', '/tmp/minio_downloads/1766583276.json', '/tmp/minio_downloads/1766583289.json', '/tmp/minio_downloads/1766583302.json', '/tmp/minio_downloads/1766583315.json', '/tmp/minio_downloads/1766583329.json', '/tmp/minio_downloads/1766583342.json', '/tmp/minio_downloads/1766583355.json', '/tmp/minio_downloads/1766583368.json', '/tmp/minio_downloads/1766583381.json', '/tmp/minio_downloads/1766583394.json', '/tmp/minio_downloads/1766583408.json', '/tmp/minio_downloads/1766583422.json', '/tmp/minio_downloads/1766583437.json', '/tmp/minio_downloads/1766583449.json', '/tmp/minio_downloads/1766583462.json', '/tmp/minio_downloads/1766583474.json', '/tmp/minio_downloads/1766583488.json', '/tmp/minio_downloads/1766583501.json', '/tmp/minio_downloads/1766583514.json', '/tmp/minio_downloads/1766583527.json', '/tmp/minio_downloads/1766583541.json', '/tmp/minio_downloads/1766583553.json', '/tmp/minio_downloads/1766583567.json', '/tmp/minio_downloads/1766583582.json', '/tmp/minio_downloads/1766583595.json']
+[2025-12-24T13:40:03.109+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-12-24T13:40:03.195+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=minio_to_snowflake, task_id=download_minio, run_id=scheduled__2025-12-24T13:36:00+00:00, execution_date=20251224T133600, start_date=20251224T133959, end_date=20251224T134003
+[2025-12-24T13:40:03.289+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2025-12-24T13:40:03.340+0000] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-12-24T13:40:03.346+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
