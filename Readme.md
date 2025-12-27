@@ -9,7 +9,7 @@ Modern stock markets generate millions of data points every second. This project
 * **Streaming Layer:** Apache Kafka acts as the central nervous system, decoupling the high-frequency API ingestion from downstream storage.
 * **Object Storage (Bronze):** A Python Consumer persists raw JSON blobs into MinIO (S3-compatible) to create an immutable record of historical data.
 *  **Orchestration:** Apache Airflow schedules the transfer of data from MinIO into Snowflake, ensuring that new records are loaded every minute.
-*  Warehouse Strategy:** Data is organized into a Medal Architecture within Snowflake, with transformations managed by dbt.
+*  **Warehouse Strategy:** Data is organized into a Medal Architecture within Snowflake, with transformations managed by dbt.
 
 🚀 **The Data Journey: Ticker to Table**
 
